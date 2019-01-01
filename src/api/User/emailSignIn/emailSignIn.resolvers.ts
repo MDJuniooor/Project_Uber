@@ -1,15 +1,12 @@
 import User from "../../../entities/User";
-import { 
-    EmailSignInmutationArgs, 
-    EmailSignInResponse 
-} from "../../../types/graph";
+import { EmailSignInResponse, EmailSignInMutationArgs } from "../../../types/graph";
 import { Resovlers } from "../../../types/resolvers";
 
 const resolvers: Resovlers = {
     Mutation: {
         EmailSignIn: async(
             _, 
-            args:EmailSignInmutationArgs
+            args:EmailSignInMutationArgs
         ): Promise<EmailSignInResponse> => {
             const {email, password} = args;
             try {
