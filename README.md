@@ -7,9 +7,9 @@ GraphQL, TypeScript, NodeJS를 이용한 Uber Backend Project
 ### Public Features
 - [x] 페이스북 연동 로그인 / 회원가입
 - [x] 이메일 로그인
-- [ ] 이메일 회원가입
-- [ ] 핸드폰 인증
+- [x] 핸드폰 인증
 - [ ] 핸드폰 인증 완료
+- [ ] 이메일 회원가입
 
 ### Private Features
 - [ ] JWT 토큰 생성
