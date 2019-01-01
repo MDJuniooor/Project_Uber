@@ -8,7 +8,7 @@ import {
     BeforeInsert,
     ManyToOne
 } from "typeorm";
-import { verificationTarget } from "src/types/types";
+import { verificationTarget } from "../types/types";
 import User from "./User";
 
 @Entity()
