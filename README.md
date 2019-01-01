@@ -14,7 +14,7 @@ GraphQL, TypeScript, NodeJS를 이용한 Uber Backend Project
 ---
 
 ### Authentication
-- [ ] JWT 토큰 생성
+- [x] JWT 토큰 생성
 - [ ] JWT 토큰 인증
 
 ---
