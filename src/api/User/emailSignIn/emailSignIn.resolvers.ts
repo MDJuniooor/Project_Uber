@@ -1,6 +1,7 @@
 import User from "../../../entities/User";
 import { EmailSignInResponse, EmailSignInMutationArgs } from "../../../types/graph";
 import { Resovlers } from "../../../types/resolvers";
+import createJWT from "../../../utils/createJWT";
 
 const resolvers: Resovlers = {
     Mutation: {
@@ -20,10 +21,11 @@ const resolvers: Resovlers = {
                 }
                 const checkPassword = await user.comparePassword(password);
                 if(checkPassword){
+                    const token = createJWT(user.id);
                     return {
                         ok: true,
                         error: null,
-                        token: "Coming Soon"
+                        token
                     };
                 } else {
                     return{
