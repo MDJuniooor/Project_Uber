@@ -20,8 +20,10 @@ GraphQL, TypeScript, NodeJS를 이용한 Uber Backend Project
 ---
 
 ### Private Features
-- [ ] 이메일 인증 
-- [ ] 내 정보 조회, 수정
+- [x] 내 정보 조회
+- [x] 이메일 인증 요청 받기
+- [x] 이메일 인증 완료
+- [ ] 내 정보 수정
 - [ ] 운전자/탑승자 스위칭
 - [ ] 실시간 위치 탐색
 - [ ] Place 추가, 수정, 삭제

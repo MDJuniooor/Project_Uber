@@ -1,6 +1,5 @@
 import { Resovlers } from "../../../types/resolvers";
-import privateResolver from "../../../utils/authResolver";
-
+import privateResolver from "../../../utils/privateResolver";
 const resolvers: Resovlers = {
     Query: {
         GetMyProfile: privateResolver(async (_,__, { req }) => {
