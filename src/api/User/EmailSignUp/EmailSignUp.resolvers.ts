@@ -1,11 +1,11 @@
-import { Resovlers } from "../../../types/resolvers";
+import { Resolvers } from "../../../types/resolvers";
 import { EmailSignUpResponse, EmailSignUpMutationArgs } from "../../../types/graph";
 import User from "../../../entities/User";
 import createJWT from "../../../utils/createJWT";
 import Verification from "../../../entities/Verification";
 import { sendVerificationEmail } from "../../../utils/sendEmail";
 
-const resolvers: Resovlers = {
+const resolvers: Resolvers = {
     Mutation: {
         EmailSignUp: async (_, args: EmailSignUpMutationArgs): Promise<EmailSignUpResponse> => {
             const { email } = args;

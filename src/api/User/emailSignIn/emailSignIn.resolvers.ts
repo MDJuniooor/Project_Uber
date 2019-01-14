@@ -1,9 +1,9 @@
 import User from "../../../entities/User";
 import { EmailSignInResponse, EmailSignInMutationArgs } from "../../../types/graph";
-import { Resovlers } from "../../../types/resolvers";
+import { Resolvers } from "../../../types/resolvers";
 import createJWT from "../../../utils/createJWT";
 
-const resolvers: Resovlers = {
+const resolvers: Resolvers = {
     Mutation: {
         EmailSignIn: async(
             _, 

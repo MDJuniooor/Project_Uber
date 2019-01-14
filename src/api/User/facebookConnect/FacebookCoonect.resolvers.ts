@@ -1,9 +1,9 @@
 import User from "../../../entities/User";
-import { Resovlers } from "../../../types/resolvers";
+import { Resolvers } from "../../../types/resolvers";
 import { FacebookConnectMutationArgs, FacebookConnectResponse } from "../../../types/graph";
 import createJWT from "../../../utils/createJWT";
 
-const resolvers: Resovlers = {
+const resolvers: Resolvers = {
     Mutation: {
         FacebookConnect: async (
             _,

@@ -1,11 +1,11 @@
 import User from "../../../entities/User";
 import Verification from "../../../entities/Verification";
 import { RequestEmailVerificationResponse } from "../../../types/graph";
-import { Resovlers } from "../../../types/resolvers";
+import { Resolvers } from "../../../types/resolvers";
 import privateResolver from "../../../utils/privateResolver";
 import { sendVerificationEmail } from "../../../utils/sendEmail";
 
- const resolvers: Resovlers = {
+ const resolvers: Resolvers = {
   Mutation: {
     RequestEmailVerification: privateResolver(
       async (_, __, { req }): Promise<RequestEmailVerificationResponse> => {

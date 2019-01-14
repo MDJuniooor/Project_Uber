@@ -1,10 +1,10 @@
 import User from "../../../entities/User";
 import Verification from "../../../entities/Verification";
 import { CompleteEmailVerificationMutationArgs, CompleteEmailVerificationResponse } from "../../../types/graph";
-import { Resovlers } from "../../../types/resolvers";
+import { Resolvers } from "../../../types/resolvers";
 import privateResolver from "../../../utils/privateResolver";
 
-const resolvers: Resovlers = {
+const resolvers: Resolvers = {
     Mutation: {
         CompleteEmailVerification: privateResolver(
             async (

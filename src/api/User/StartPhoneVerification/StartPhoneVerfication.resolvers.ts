@@ -1,8 +1,8 @@
-import { Resovlers } from "../../../types/resolvers";
+import { Resolvers } from "../../../types/resolvers";
 import { sendVerificationSMS } from "../../../utils/sendSMS";
 import { StartPhoneVerificationMutationArgs, StartPhoneVerificationResponse } from "../../../types/graph";
 import Verification from "../../../entities/Verification";
-const resolvers: Resovlers = {
+const resolvers: Resolvers = {
     Mutation: {
         StartPhoneVerification: async (
             _, 

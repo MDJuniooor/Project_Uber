@@ -1,10 +1,10 @@
-import { Resovlers } from "../../../types/resolvers";
+import { Resolvers } from "../../../types/resolvers";
 import { CompletePhoneVerificationMutationArgs, CompletePhoneVerificationResponse } from "../../../types/graph";
 import Verification from "../../../entities/Verification";
 import User from "../../../entities/User";
 import createJWT from "../../../utils/createJWT";
 
-const resolvers: Resovlers = {
+const resolvers: Resolvers = {
     Mutation: {
         CompletePhoneVerification: async (
             _,
