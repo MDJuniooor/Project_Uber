@@ -27,7 +27,7 @@ GraphQL, TypeScript, NodeJS를 이용한 Uber Backend Project
 - [X] 내 정보 수정
 - [X] 실시간 위치 탐색
 - [X] Place 추가, 수정, 삭제
-- [ ] 근처 운전자 보기
+- [X] 근처 운전자 보기
 - [ ] 근처 운전자 구독 (Subscribe)
 - [ ] 승차 요청
 - [ ] 근처 승차 요청 승락
