@@ -13,7 +13,6 @@ import privateResolver from "../../../utils/privateResolver";
             { relations: ["places"] }
           );    
           if (user) {
-              console.log(user.places);
             return {
               ok: true,
               places: user.places,
