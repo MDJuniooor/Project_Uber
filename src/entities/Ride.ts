@@ -14,42 +14,46 @@ import User from "./User";
 class Ride extends BaseEntity {
     @PrimaryGeneratedColumn() id: number;
 
-    @Column({type:"text", enum: ["ACCEPTED","FINISHED","CANCELED","REQUESTING","ONROUTE"]}) 
+    @Column({
+        type: "text",
+        enum: ["ACCEPTED", "FINISHED", "CANCELED", "REQUESTING", "ONROUTE"],
+        default: "ACCEPTED"
+    })
     status: rideStatus;
-    
-    @Column({type: "text"}) 
+
+    @Column({ type: "text" })
     pickUpAddress: string;
-    
-    @Column({type: "double precision"}) 
+
+    @Column({ type: "double precision" })
     pickUpLat: number;
-    
-    @Column({type: "double precision"}) 
+
+    @Column({ type: "double precision" })
     pickUpLng: number;
-    
-    @Column({type: "text"}) 
+
+    @Column({ type: "text" })
     dropOffAddress: string;
-    
-    @Column({type: "double precision"}) 
+
+    @Column({ type: "double precision" })
     dropOffLat: number;
-    
-    @Column({type: "double precision"}) 
+
+    @Column({ type: "double precision" })
     dropOffLng: number;
-    
-    @Column({type: "double precision"}) 
+
+    @Column({ type: "double precision" })
     price: number;
-    
-    @Column({type: "text"}) 
+
+    @Column({ type: "text" })
     distance: string;
-    
-    @Column({type: "text"}) 
+
+    @Column({ type: "text" })
     duration: string;
 
     @ManyToOne(type => User, user => user.ridesAsPassenger)
     passenger: User;
 
-    @ManyToOne(type => User, user => user.ridesAsDriver)
+    @ManyToOne(type => User, user => user.ridesAsDriver, { nullable: true })
     driver: User;
-    
+
     @CreateDateColumn() createdAt: string;
     @UpdateDateColumn() updatedAt: string;
 
