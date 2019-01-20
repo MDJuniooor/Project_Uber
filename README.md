@@ -34,7 +34,7 @@ GraphQL, TypeScript, NodeJS를 이용한 Uber Backend Project
 - [X] 근처 승차 요청 구독
 - [X] 승차 상태 구독
 - [X] 승차 상태 업데이트
-- [ ] 승차 열람 
+- [X] 승차 열람 
 - [ ] 채팅 메시지 보기
 - [ ] 채팅 메시지 구독 (Real-time)
 - [ ] 채팅 메시지 보내기
